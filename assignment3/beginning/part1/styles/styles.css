@@ -1,0 +1,60 @@
+
+h1, h2, h3, h4, h5, h6 {
+    color: #929CA4; /* Change the color */
+    border-bottom: 1px solid #929CA4; /* Add a border underneath */
+}
+
+p:first-of-type::first-letter {
+    font-size: 30px;
+}
+
+
+.solution {
+    color: #CC1C0D; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+
+#testimonial1 p, #testimonial2 p {
+    font-style: italic; /* Italicize text */
+    text-indent: 50px; /* Indent text */
+    margin-left: 0; /* Remove any additional margin */
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    background-color: #EDEDED;
+}
+
+a[href="http://www.dorknozzle.com"] {
+    /* Set unvisited, visited, active, and hover states */
+    color: #0000FF; /* Unvisited (blue) */
+    text-decoration: none; /* Remove underline */
+}
+a[href="http://www.dorknozzle.com"]:visited {
+    color: #800080; /* Visited (purple) */
+}
+a[href="http://www.dorknozzle.com"]:active {
+    color: #FF0000; /* Active (red) */
+}
+a[href="http://www.dorknozzle.com"]:hover {
+    color: #008000; /* Hover (green) */
+    text-decoration: underline; /* Underline on hover */
+}
+
+ul#management-team {
+    list-style-type: none;
+}
+
+ul#management-team li:first-child {
+    color: blue;
+}
+
+ul#management-team li:last-child {
+    color: red;
+}
+
+

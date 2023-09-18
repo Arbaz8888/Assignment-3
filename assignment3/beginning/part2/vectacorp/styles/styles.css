@@ -1,0 +1,151 @@
+
+body {
+    width: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 0 0 0 20px;
+}
+
+
+
+
+/* Remove bullets from all unordered lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Add bullets to unordered lists within paragraphs */
+p + ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Add extra margin to sub-menu items for indentation */
+ul ul li {
+    margin-left: 40px;
+}
+
+
+ul a {
+    text-decoration: none; /* Remove underline from links */
+    color: #CC1C0D; /* Set link color to red */
+    border-bottom: 1px solid #CC1C0D;
+}
+
+ul a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+h2 {
+    color: #CC1C0D; /* Red text color */
+    background-color: #DFE3E6; /* Light grey background */
+    padding: 10px;
+    border: 1px solid #929CA4; /* Dark grey border */
+    border-radius: 5px; /* Add curved corners */
+    width: 100%;
+    display: inline-block; /* Prevent the heading from taking full width */
+}
+
+a {
+    color: #CC1C0D; /* Set link color to red */
+}
+
+
+p img {
+    
+    float: left;
+    vertical-align: text-top; /* Align the image vertically in the middle */
+    margin-right: 10px;
+    
+}
+
+
+.bio {
+    margin-bottom: 20px; /* Add spacing between biography sections */
+}
+
+.bio img {
+    float: left;
+    vertical-align: text-top; /* Align the image vertically in the middle */
+    margin-right: 10px;
+
+    border: 2px solid red;
+    border-radius: 45%; /* Use 50% to create a circular border */
+    display: inline-block; /* Ensure proper alignment with text */
+}
+
+.bio p {
+    margin: 0; /* Remove default margins for paragraphs within the biography */
+}
+
+
+.pricing {
+    overflow: hidden; /* Clear floats */
+}
+
+.pricing div {
+    width: 205px; /* Adjust width as needed */
+    float: left; /* Float divs left for side-by-side display */
+    margin-right: 10px; /* Add spacing between pricing divs */
+    padding-left: 10px; /* Add left padding to separate content */
+    border: 2px solid #929CA4; /* Grey border color */
+    border-radius: 10px; /* Add curved corners */  
+    height: 100%;
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    position: relative; /* Establish positioning context for pseudo-elements */
+}
+
+.pricing div img {
+   /* display: block;  Prevent logos from affecting text alignment */
+   /* margin: 0 auto; /* Center logos horizontally */
+   height: 100%;
+   align-items: center;
+}
+
+.pricing div:nth-child(1)::after {
+    background-color: #CC1C0D;
+}
+
+.pricing h3 {
+    margin-bottom: 0; /* Set the bottom margin of <h3> to 0 */
+}
+
+/* Create dividers after logos */
+.pricing div::after {
+    content: ""; /* Add empty content */
+    display: block; /* Make it a block element */
+    width: 100%; /* Divider width as a percentage of the box width */
+    height: 10px; /* Divider height */
+    position: absolute; /* Position it absolutely within the box */
+    top: 46px; /* Place it below the logo (adjust as needed) */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Teal divider after the second box */
+.pricing div:nth-child(2)::after {
+    background-color: #37A4A4;
+}
+
+/* Purple divider after the third box */
+.pricing div:nth-child(3)::after {
+    background-color: #685288;
+}
+
+/* Black divider after the fourth box */
+.pricing div:nth-child(4)::after {
+    background-color: #000000;
+}
+
+
+
+
+
+
